@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>calculate - Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1750108667028"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1750108667028">
+		<link rel="preload" as="style" href="./css/webfonts.min.css">
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+				</div>
+			</header>
+			<main class="page page--home">
+				<form class="form-calc">
+					<h1 class="title">Розрахунок Мандрівки</h1>
+					<div class="input_body">
+						<div class="input_box">
+							<input data-fls-input="" autocomplete="off" name="start_mileage" type="number" id="start_mileage" placeholder="" class="input">
+							<label for="start_mileage">пробіг авто до виїзду</label>
+						</div>
+						<div class="input_box">
+							<input data-fls-input="" autocomplete="off" name="fuel_quantity" type="number" id="fuel_quantity" placeholder="" class="input">
+							<label for="fuel_quantity">кількість палива при віїзді</label>
+						</div>
+						<div class="input_box">
+							<input data-fls-input="" autocomplete="off" name="total_km" type="number" id="total_km" placeholder="" class="input">
+							<label for="total_km">Пробіг</label>
+						</div>
+						<div class="input_box">
+							<input data-fls-input="" autocomplete="off" name="loaded_km" type="number" id="loaded_km" placeholder="" class="input">
+							<label for="loaded_km">Пробіг з вантажем</label>
+						</div>
+						<div class="input_box">
+							<input data-fls-input="" autocomplete="off" name="cargo" type="number" id="cargo" placeholder="" class="input">
+							<label for="cargo">Вантаж (тонах)</label>
+						</div>
+					</div>
+					<button data-fls-button="" type="submit" class="button">Розрахувати</button>
+				</form>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="23" height="23" viewbox="0 0 23 23" fill="#ffc907" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#ffc907" stroke-linecap="square"></path>
+							<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#ffc907" stroke-linecap="square"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__text">
+						<div class="popup__output" data-output=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
